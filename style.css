@@ -1,0 +1,157 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+
+}
+body{
+  background-color: #0B181E;
+  font-family: 'Poppins', sans-serif;
+}
+#app{
+  display: flex;
+  height: 90vh;
+  margin:3.2rem 0 3.2rem 3.2rem ;
+}
+#nav-bar{
+  display: flex;
+
+  padding:8rem 2rem 4rem 2rem;
+  background-color: #77DE82;
+  border-radius: 2rem;
+}
+#icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.config{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  align-items: center;
+  text-decoration: none;
+}
+.bgIconsHover{
+  position: relative;
+  width: 5.5rem;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bgIconsHover i{
+  position: absolute;
+  z-index: 1;
+  font-size: 3.5rem;
+  color: #0B181E;
+}
+.bgIconsHover:hover{
+  background-color: #aeed9d;
+  border-radius: 2rem;
+}
+.exit{
+  display: flex;
+  text-decoration: none;
+}
+.exit i{
+  font-size: 3.5rem;
+}
+#overall{
+  margin: 1rem 0 1rem 3rem;
+  max-width: 80rem;
+  
+}
+#firstDiv{
+  width:80rem;
+  border-bottom: 2px solid #aeed9d;
+  padding: .8rem 0 .8rem 3rem;
+  border-radius: 1rem;
+  color: #aeed9d;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+#firstDiv h3{
+  font-family: 'Montserrat', sans-serif;
+}
+#secondDiv{
+  padding:.5rem 0 0 3rem;
+  color: aliceblue;
+  font-size: 1.1rem;
+}
+#header span{
+
+  font-family: 'Montserrat', sans-serif;
+  font-size:1.5rem;
+
+}
+#dataOfDashboard{
+  margin-top:3rem;
+  display: flex;
+  flex-direction: row;
+  gap:5rem;
+  margin-bottom: 3rem;
+}
+.databox{
+  background-color:#202E2F;
+  text-align: start;
+  padding: 1rem 1rem 1.5rem 1rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 3rem;
+  font-weight: 700;
+}
+
+figure p{
+  margin-top: 1rem;
+}
+figcaption p{
+  margin-top:3rem;
+  font-size: 2rem;
+  color:#77DE82;
+}
+#latePayment figcaption p{
+  color: #deb177;
+}
+#calendarDays{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#calendarDays button{
+  height: 5rem;
+  background:none;
+  border: none;
+  font-size: 5rem;
+  color: #202E2F;
+}
+#days-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.day {
+  display: inline-block;
+  width: 80px;
+  line-height: 80px;
+  margin-right: 1rem;
+  text-align: center;
+  background-color: #202E2F;
+  border-radius: 3rem;
+  color: aliceblue; 
+  overflow: hidden;
+}
+.day:last-child{
+  margin-right: 0;
+}
+.day:hover{
+  background-color: #77DE82;
+}
+::-webkit-scrollbar {
+  display: none;
+}
