@@ -1,0 +1,159 @@
+
+#firstDiv{
+  width:80rem;
+  border-bottom: 2px solid #aeed9d;
+  padding: .8rem 0 .8rem 3rem;
+  border-radius: 1rem;
+  color: #aeed9d;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+#firstDiv h3{
+  font-family: 'Montserrat', sans-serif;
+}
+#secondDiv{
+  padding:.5rem 0 0 0;
+  color: aliceblue;
+  font-size: 1.1rem;
+}
+#header{
+  padding-left: 3rem;
+}
+#header span{
+  font-family: 'Montserrat', sans-serif;
+  font-size:1.5rem;
+  font-weight: 700;
+  color: rgb(181, 183, 184);
+}
+#cardOfDashboard{
+  margin-top:4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:3rem;
+  margin-bottom:4rem;
+  
+}
+.dataBox{
+  background-color:#202E2F;
+  text-align: start;
+  padding: 1rem 1rem 1.5rem 1rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 3rem;
+  font-weight: 700;
+}
+
+.dataBox p{
+  margin-top: 1rem;
+}
+.dataBoxValue p{
+  margin-top:3rem;
+  font-size: 2rem;
+  color:#77DE82;
+}
+#latePayment figcaption p{
+  color: #deb177;
+}
+#calendarDays{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#calendarDays button{
+  height: 5rem;
+  background:none;
+  border: none;
+  font-size: 5rem;
+  color: #202E2F;
+}
+#days-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.day {
+  display: inline-block;
+  padding: .5rem;
+  width: 8.5rem;
+  line-height: 4rem;
+  margin-right: 3rem;
+  text-align: center;
+  background-color: #202E2F;
+  border-radius: 3rem;
+  color: aliceblue; 
+  overflow: hidden;
+}
+
+.day p{
+  text-align: center;
+  user-select: none; 
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; 
+  -khtml-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+}
+.day:last-child{
+  margin-right: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.note{
+  display: flex;
+  
+  justify-content: center;
+}
+.containerNote{
+  background-color: #202E2F;
+  padding:3rem;
+  border-radius: 5rem;
+  width: 30rem;
+  height: 20rem;
+  margin-top:3rem;
+}
+
+.headerNote span{
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+.ph-note-pencil{
+  position: relative;
+  color:#aeed9d;
+  font-size: 1.7rem;
+  left:22rem;
+  bottom: 2rem;
+}
+.timings{
+  display: flex;
+  justify-content: space-around;
+}
+.time{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #0B181E;
+  border-radius: 2.5rem;
+  margin-top:2rem;
+}
+.time p:first-child{
+  font-size: 1rem;
+}
+#timeStart{
+  width:7.53rem;
+  
+}
+.time p{
+  font-size: 1.4rem;
+  color:#455255;
+}
+#duration{
+  font-size: .7rem;
+}
+.hidden{
+  display:none
+}
