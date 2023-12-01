@@ -1,23 +1,43 @@
 
 export default{
+  dateDashboard(){
+    const dateDashboard=document.getElementById("dateDashboard")
+    let date=new Date()
+    const dataHora = date.getUTCDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
+    dateDashboard.innerText=dataHora
+  },
   
   createDays(){
-    let date = new Date();
+    let date = new Date()
+    
+    let daysContainer = document.querySelector("#days-container")
+    const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    for(let i = 0; i < 7; i++) {
 
-    let daysInMouth=new Date(date.getFullYear(),date.getMonth()+1,0).getDate()
-
-    let dayToday=date.getDate()
-    let daysContainer=document.getElementById("days-container")
-
-    for(let i=dayToday;i<=daysInMouth;i++){
+      //logic for show seven days ahead today 
+      let futureDate = new Date(date.getTime());
+      futureDate.setDate(date.getDate() + i);
+      const dayOfWeek=weekdays[futureDate.getDay()]
+     
+      //create section with days
       let daySection=document.createElement("section")
-      daySection.className="day"
-      daySection.innerHTML=i;
+      let dayWeek=document.createElement("h3")
+      let dayMonth=document.createElement("p")
+      
 
-      daysContainer.appendChild(daySection);
-    }
+      daySection.className="day"
+      dayWeek.innerHTML=dayOfWeek
+      dayMonth.innerHTML=futureDate.getDate(); 
   
-  },
+      daysContainer.appendChild(daySection);
+      daySection.appendChild(dayWeek)
+      daySection.appendChild(dayMonth)
+    }
+    
+  }
+    
+  
+  /*
   buttonsScroll(){
     let scrollLeftButton = document.getElementById("scroll-left");
     let scrollRightButton = document.getElementById("scroll-right");
@@ -32,5 +52,5 @@ export default{
     daysContainer.scrollBy({ left: 100, behavior: 'smooth' });
     });
 
-  }
+  }*/
 }
