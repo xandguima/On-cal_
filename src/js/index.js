@@ -10,12 +10,16 @@ const routes = {
   "/exit":"src/pages/exit.html"
  
 }
-
+window.onload = function() {
+  handle();
+};
+ 
 function route(event) {
   event.preventDefault()
   window.history.pushState({},"",event.currentTarget.href)
-    handle()
+  handle()
 }
+
 async function handle() {
   const {pathname}=window.location
   console.log(pathname)
@@ -39,6 +43,7 @@ async function handle() {
 
     }else if (pathname == "/exit") {
       styleSheet.href = "src/css/exit.css"
+      document.querySelector('#app').innerHTML = html
     }
     else if(pathname=="/") {      
       daysContainer.createDays()
@@ -53,13 +58,3 @@ async function handle() {
 }
 window.onpopstate=()=>handle()
 window.route = route;
-
-
-
-
-
-
-
-
-
-//daysContainer.buttonsScroll()
