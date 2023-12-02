@@ -6,16 +6,15 @@ const routes = {
   "/": "src/pages/dashboard.html",
   "/notification":"src/pages/notification.html",
   "/addNotes":"src/pages/addNotes.html",
-  "/settings":"src/pages/settings.html"
+  "/settings":"src/pages/settings.html",
+  "/exit":"src/pages/exit.html"
  
 }
 
 function route(event) {
   event.preventDefault()
-  
-  window.history.pushState({},"",event.target.href)
-  handle()
-
+  window.history.pushState({},"",event.currentTarget.href)
+    handle()
 }
 async function handle() {
   const {pathname}=window.location
@@ -37,6 +36,9 @@ async function handle() {
     }
     else if (pathname == "/notification") {
       styleSheet.href = "src/css/notification.css"
+
+    }else if (pathname == "/exit") {
+      styleSheet.href = "src/css/exit.css"
     }
     else if(pathname=="/") {      
       daysContainer.createDays()
