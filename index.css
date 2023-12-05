@@ -5,80 +5,91 @@
 }
 :root{
   font-size: 62.5%;
-
 }
 
 body{
+  height: 100%;
   background-color: #0B181E;
   font-family: 'Poppins', sans-serif;
 }
 #app{
-  display: flex;
-  height: 90vh;
-  margin:3.2rem 0 3.2rem 3.2rem ;
+  height: 80vh;
+  margin:3.2rem 3.2rem 3.2rem 3.2rem ;
 }
 #nav-bar{
+  margin: 3rem auto;
+  position: absolute;
+  bottom:1;
+  left:0;
+  right:0;
+  width: 90%;
   display: flex;
-  padding:8rem 2rem 4rem 2rem;
+  justify-content: center;
+  padding:1em 2rem 1rem 2rem;
   background-color: #77DE82;
   border-radius: 2rem;
 }
 #icons{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-
 }
 .config{
   display: flex;
-  flex-direction: column;
-  gap:2rem;
+  flex-direction: row;
+  gap:3rem;
   align-items: center;
   text-decoration: none;
 }
 .bgIconsHover{
-  position: relative;
   display: flex;
-  width: 5.5rem;
-  height: 5.5rem;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  text-decoration: none;
 }
 .bgIconsHover i{
-  position: absolute;
   z-index: 1;
-  font-size: 3.5rem;
+  font-size: 2rem;
   color: #0B181E;
 }
 .bgIconsHover:hover{
   background-color: #aeed9d;
   border-radius: 2rem;
 }
-.exit{
-  display: flex;
-  text-decoration: none;
-}
-.exit i{
-  font-size: 3.5rem;
+#exit{
+  margin-left: 1rem
 }
 #overall{
-  margin: 1rem 0 1rem 3rem;
+  margin: 0 auto;
   max-width: 80rem;
+  
 }
-@media screen and (max-width: 767px) {
+
+@media  screen and (min-width:765px) {
   #app{
-    flex-direction: column;
-  }
-  #icons{
+    display: flex;
     flex-direction: row;
+    margin-left: 12rem;
+  }
+  #overall{
+    max-width: 80rem; 
   }
   .config{
-    flex-direction: row;
+    flex-direction: column;
+    gap:6rem;
   }
   #nav-bar{
-    padding:0;
-    
+    margin: 0rem 2rem 0 1rem;
+    padding:5em 2rem 1rem 2rem;
+    max-width: 8rem;
   }
-
+  #exit{
+    margin-left: 0;
+    margin-top:15rem;
+    margin-bottom: 2rem;
+  }
+  .bgIconsHover i{
+    font-size: 3rem; 
+  }
 }
