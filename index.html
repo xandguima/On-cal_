@@ -17,6 +17,8 @@
 </head>
 <body>
   <div id="app">
+   
+    <div id="overall"></div>
     <nav id="nav-bar">
       <div id="icons">
         <li class="config">
@@ -24,15 +26,11 @@
             <a class="bgIconsHover" href="/notification" onclick="route(event)" ><i class="ph ph-bell"></i></a>
             <a class="bgIconsHover" href="/addNotes" onclick="route(event)" ><i class="ph ph-calendar-plus"></i></a>
             <a class="bgIconsHover" href="/settings" onclick="route(event)" ><i class="ph ph-gear"></i></a>     
-        </li>
-        <li class="exit">
-          <a class="bgIconsHover" href="/exit" onclick="route(event)"><i class="ph ph-sign-out"></i></a>
-          
+            <a class="bgIconsHover" id="exit" href="/exit" onclick="route(event)"><i class="ph ph-sign-out"></i></a>  
         </li>
       </div>
 
     </nav>
-    <div id="overall"></div>
   </div>
   
     
