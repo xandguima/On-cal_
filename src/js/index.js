@@ -1,5 +1,6 @@
 import daysContainer from "./controller/daysContainerController.js"
 import notesDays from "./controller/notesController.js"
+import notifications from "./controller/notificationsController.js"
 
 
 const routes = {
@@ -22,10 +23,8 @@ function route(event) {
 
 async function handle() {
   const {pathname}=window.location
-  console.log(pathname)
-  
   const route = routes[pathname] || routes[404]
-  console.log(route)
+
   await fetch(route)
   .then(data => data.text())
   .then(html => {
@@ -40,6 +39,7 @@ async function handle() {
     }
     else if (pathname == "/notification") {
       styleSheet.href = "src/css/notification.css"
+      notifications.createNotifications()
 
     }else if (pathname == "/exit") {
       styleSheet.href = "src/css/exit.css"
@@ -48,7 +48,7 @@ async function handle() {
     else if(pathname=="/") {      
       daysContainer.createDays()
       notesDays.toggleShowNotes()
-     daysContainer.dateDashboard()
+      daysContainer.dateDashboard()
      styleSheet.href = "src/css/dashboard.css"
     }
 
