@@ -48,7 +48,7 @@ export default{
         "day":"Thursday",
         "hospital":"UPA Satélite",
         "time":"15:30",
-        "value":"R$500",
+        "value":"500",
         "duration":"10"
       },
     {  
