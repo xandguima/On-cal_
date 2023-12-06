@@ -1,3 +1,6 @@
+#overall{
+  width: 100%;
+}
 #notificationPanel{
   max-height: 50rem;
   overflow: auto;
@@ -28,6 +31,8 @@ h1{
   background-color: #65be6e;
   padding:  1rem 1rem 1rem 2rem ;
   border-radius: 2rem;
+  --delay: .2s;
+  animation: appear .4s var(--delay) backwards;
  
 }
 .headNotification{
@@ -35,6 +40,20 @@ h1{
   align-items: center;
   gap: 2rem;
   margin-bottom: 1rem;
+}
+@keyframes appear{
+  0%{
+    opacity: 0;
+    transform:scale(0.7);
+
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 @media screen and (min-width: 768px) {
   #overall{
