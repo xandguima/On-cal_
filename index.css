@@ -14,20 +14,25 @@ body{
 }
 #app{
   height: 80vh;
-  margin:3.2rem 3.2rem 3.2rem 3.2rem ;
+  
+  margin:2rem ;
+  display: flex;
+  justify-content: center;
 }
 #nav-bar{
-  margin: 3rem auto;
+  
+  margin: 3rem auto 0  auto;
   position: absolute;
-  bottom:1;
+  bottom:0px;
   left:0;
   right:0;
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: center;
   padding:1em 2rem 1rem 2rem;
   background-color: #77DE82;
-  border-radius: 2rem;
+  border-radius: 2rem; 
+
 }
 #icons{
   display: flex;
@@ -62,15 +67,17 @@ body{
 }
 #overall{
   margin: 0 auto;
-  max-width: 80rem;
-  
+  max-width: 80%;
 }
+  
+
 
 @media  screen and (min-width:765px) {
   #app{
     display: flex;
     flex-direction: row;
-    margin-left: 12rem;
+    justify-content: space-between;
+  
   }
   #overall{
     max-width: 80rem; 
@@ -80,9 +87,11 @@ body{
     gap:6rem;
   }
   #nav-bar{
-    margin: 0rem 2rem 0 1rem;
+    bottom: 10rem;
+    right: 115rem;
     padding:5em 2rem 1rem 2rem;
     max-width: 8rem;
+  
   }
   #exit{
     margin-left: 0;
