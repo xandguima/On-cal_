@@ -21,8 +21,7 @@ O projeto esta em uma fase bem inicial mas já estou bem feliz em conseguir tira
 <br>
 
 <p align="center">
-  <img alt="Oncall" src="./img/previewMobile.jpg"" width="100%">
-  <img alt="Oncall" src="./img/previewDesktop.jpg"" width="100%">
+  <img alt="Oncall" src="./src/img/previewDesktop.jpg"" width="100%">
   
 </p>
 
