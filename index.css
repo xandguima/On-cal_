@@ -13,17 +13,15 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 #app{
-  height: 80vh;
-  
+  height: 80vh; 
   margin:2rem ;
   display: flex;
   justify-content: center;
 }
 #nav-bar{
-  
   margin: 3rem auto 0  auto;
   position: absolute;
-  bottom:0px;
+  bottom:0;
   left:0;
   right:0;
   width: 80%;
@@ -87,11 +85,11 @@ body{
     gap:6rem;
   }
   #nav-bar{
-    bottom: 10rem;
+    top:2rem;
     right: 115rem;
     padding:5em 2rem 1rem 2rem;
     max-width: 8rem;
-  
+    bottom:inherit;
   }
   #exit{
     margin-left: 0;
