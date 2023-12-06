@@ -2,8 +2,8 @@
 export default{
   dateDashboard(){
     const dateDashboard=document.getElementById("dateDashboard")
-    let date=new Date()
-    const dataHora = date.getUTCDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
+    let date=new Date() 
+    const dataHora = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
     dateDashboard.innerText=dataHora
   },
   
@@ -26,6 +26,7 @@ export default{
       
 
       daySection.className="day"
+      dayWeek.className="dayWeek"
       dayWeek.innerHTML=dayOfWeek
       dayMonth.innerHTML=futureDate.getDate(); 
   
@@ -36,21 +37,4 @@ export default{
     
   }
     
-  
-  /*
-  buttonsScroll(){
-    let scrollLeftButton = document.getElementById("scroll-left");
-    let scrollRightButton = document.getElementById("scroll-right");
-    let daysContainer = document.getElementById("days-container");
-
-   // Add event listeners to the buttons
-    scrollLeftButton.addEventListener("click", function() {
-    daysContainer.scrollBy({ left: -100, behavior: 'smooth' });
-    });
-
-    scrollRightButton.addEventListener("click", function() {
-    daysContainer.scrollBy({ left: 100, behavior: 'smooth' });
-    });
-
-  }*/
 }
